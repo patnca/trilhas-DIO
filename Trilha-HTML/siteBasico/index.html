@@ -1,0 +1,189 @@
+<html>
+    <h1>Módulo 1 - Trilha Web Developer (HTML)</h1>
+    <hr>
+
+    <h2 id="inicio">Indice</h2>
+    <ol>
+        <li>
+            <a href="#cap1">Entendendo Comunicação Client x Server</a>
+            <ul>
+                <li><a href="#historiaWeb">História da Web</a></li>
+                <li><a href="#clients">O que são Clients</a></li>
+                <li><a href="#servers">O que são Servers</a></li>
+                <li><a href="#lang">Sobre linguagens de programação web</a></li>
+            </ul>
+        </li><br>
+        <li>
+            <a href="#html">Aprendendo HTML na prática</a>
+            <ul>
+                <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+                <li><a href="#tags">TAGS</a></li>
+                <li><a href="#olUl">Listas Ordenadas e Não Ordenadas</a></li>
+                <li><a href="#link">Links</a></li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2 id="cap1">Entendendo Comunicação Client x Server <sup><a href="#inicio"><small>(inicio)</small></a></sup></h2>
+    <p>Para início da trilha, entendemos um pouco sobre a história do computador, o surgimento da internet e entendemos o funcionamento da comunicação ao acessarmos uma página web ou utilizamos um aplicativo.</p>
+    <p>Vimos a 1ª geração dos computadores como o <mark><i>Mark I</i></mark> criado em 1944 pela Harvard. Outros computadores da 1ª geração foram o Colossus (1946), Eniac também em 46.</p>
+    <p>A 2ª geração de computadores, período entre 1959 e 1965, ficou caracterizada pela redução no tamanho dos computadores, graças à criação dos componentes chamados <mark>transistores</mark> </p>
+    <p>Na 3ª geração, com a utilização de circuitos integrados (transistore, capacitores, resistores), os computadores passaram a ocupar ainda menos espaço nos ambientes. Essa geração compreendeu os anos de <strong>1965 a 1970.</strong></p>
+    <p>A partir de 1971, com a criação dos chamados computadores pessoais (<abbr title="Personal Computer">PC's</abbr>), onde já havia a utilização de periféricos como o mouse e a utilização de interface gráficas, foi dada início à 4ª geração dos computadores, chegando aos dias de hoje nos computadores mais avançados que conhecemos.</p>
+    <p>Fala-se ainda numa 5ª geração de computadores, com o uso de computadores quânticos, <abbr title="Inteligências Artificiais">IA's</abbr>, dentre outras tecnologias.</p>
+
+    <h3 id="historiaWeb">História da Web <sup><a href="#inicio"><small>(inicio)</small></a></sup></h3>
+    <p>
+        A Internet surgiu a partir de um projeto da agência norte-americana Advanced Research and Projects Agency (ARPA) objetivando conectar os computadores dos seus departamentos de pesquisa. <br>
+        A Internet nasceu à partir da ARPANET, que interligava quatro instituições: Universidade da Califórnia, LA e Santa Bárbara; Instituto de Pesquisa de Stanford e Universidade de Utah, tendo início em 1969. <br>
+    </p>
+    <p>Os pesquisadores e estudiosos do assunto receberam o projeto à disposição, para trabalhar. Deste estudo que perdurou na década de 70, nasceu o <abbr title="Transmission Control Protocol / Internet Protocol">TCP/IP</abbr>, grupo de protocolos que é a base da Internet desde aqueles tempos até hoje.</p>
+    <p>A Universidade da Califórnia de Berkley implantou os protocolos TCP/IP ao Sistema Operacional UNIX, possibilitando a integração de várias universidades à ARPANET.</p>
+    <p>Nesta época, início da década de 80, redes de computadores de outros centros de pesquisa foram integrados à rede da ARPA. Em 1985, a entidade americana National Science Foundation (NSF) interligou os supercomputadores do seu centro de pesquisa, a NSFNET, que no ano seguinte entrou para a ARPANET. A ARPANET e a NSFNET passaram a ser as duas espinhas dorsais (backbone) de uma nova rede que junto com os demais computadores ligados a elas, era a INTERNET.</p>
+    <p>Dois anos depois, em 1988, a NSFNET passou a ser mantida com apoio das organizações IBM, MCI (empresa de telecomunicações) e MERIT (instituição responsável pela rede de computadores de instituições educacionais de Michigan), que formaram uma associação conhecida como Advanced Network and Services (ANS).</p>
+    <p>Em 1990 o backbone ARPANET foi desativado, criando-se em seu lugar o backbone Defense Research Internet (DRI); em 1991/1992 a ANSNET, que passou a ser o backbone principal da Internet; nessa mesma época iniciou-se o desenvolvimento de um backbone europeu (EBONE), interligando alguns países da Europa à Internet.</p>
+    <p>A partir de 1993 a Internet deixou de ser uma instituição de natureza apenas acadêmica e passou a ser explorada comercialmente, tanto para a construção de novos backbones por empresas privadas (PSI, UUnet, Sprint,...) como para fornecimento de serviços diversos, abertura essa a nível mundial.</p>
+    <p>Podemos citar grandes nomes que contribuíram para o desenvolvimento dos computadores e da Internet:</p>
+    <ol>
+        <li>
+            <h4><u>Grace Murray Hopper</u></h4>
+            <ul>
+                <li>Marinha dos Estados Unidos</li>
+                <li>Foi uma das programadoras do Mark I em 1944</li>
+                <li>Criou a linguagem de programação Flow-Matic, que serviria de base para a criação do COBOL</li>
+                <li>Criou o termo "bug" na computação</li>
+            </ul>
+        </li><br>
+        <li>
+            <h4><u>Robert E. Kahn</u></h4>
+            <ul>
+                <li>Primeira apresentação pública da ARPANet</li>
+                <li>Apresentou o primeiro e-mail</li>
+                <li>Criador do TCP/IP</li>
+            </ul>
+        </li><br>
+        <li>
+            <h4><u>Tim Berners-Lee</u></h4>
+            <ul>
+                <li>Inventor do WWW</li>
+                <li>Diretor do World Wide Web Consortion (W3C)</li>
+                <li>Popularizou o HTTP e o HTML</li>
+            </ul>
+        </li><br>
+        <li>
+            <h4><u>Marc Andreessen</u></h4>
+            <ul>
+                <li>Inventor do navegador Netscape Navigator</li>
+            </ul>
+        </li><br>
+        <li>
+            <h4><u>Bill Gates</u></h4>
+            <ul>
+                <li>Fundador da Microsoft</li>
+                <li>Empresa criou o Internet Explorer (durante um tempo, o navegador mais usado no mundo)</li>
+                <li>Tornou o computador um item acessível, tornando assim mais popular o acesso à Internet</li>
+            </ul>
+        </li><br>
+        <li>
+            <h4><u>Steve Jobs</u></h4>
+            <ul>Fundador da Apple</ul>
+            <ul>Concorrente direta da Microsoft</ul>
+            <ul>Lançou o Iphone em Junho de 2007, popularizando assim o uso dos smartphones</ul>
+        </li>
+    </ol>
+    <h3 id="clients">Clients <sup><a href="#inicio"><small>(inicio)</small></a></sup></h3>
+    <p>São chamados de Clients ou Clientes, todos os dispositivos que fazem solicitação de um serviço na WEB a um servidor. Esses dispositivos são comumente nossos smartphones, PC ou notebooks.</p>
+
+    <h3 id="servers">Servers <sup><a href="#inicio"><small>(inicio)</small></a></sup></h3>
+    <p>Um servidor é um computador que faz parte de uma rede e que fornece serviços a outros computadores</p>
+    <p>Entre os diversos tipos de servidores, pode-se destacar os servidores de arquivos (armazenam os documentos e distribuem-nos aos clientes da rede), os servidores de correio eletrônico (E-mail) (que guardam, recebem e enviam correios electrónicos) e os servidores web (armazenam os documentos que são acessíveis através da Internet).</p>
+
+    <h3 id="lang">Linguagens de Programação <sup><a href="#inicio"><small>(inicio)</small></a></sup></h3>
+    <p>Linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas ou softwares como também são conhecidos.</p>
+    <p>As linguagens de programação, no desenvolvimento web, são divididas em server-side e client-side:</p>
+    <p>
+        <h5>Server-side</h5>
+        <p>São as linguagens utilizadas/executadas no lado do servidor:</p>
+        <ul>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C#</li>
+        </ul>
+    </p>
+    <p>
+        <h5>Client-side</h5>
+        <p>São as linguagens utilizadas/executadas no lado do cliente:</p>
+        <ul>
+            <li>JavaScript</li>
+        </ul>
+    </p>
+
+    <h2 id="html">Aprendendo HTML na Prática <sup><a href="#inicio"><small>(inicio)</small></a></sup></h2>
+    <p>Vimos aqui, as ferramentas utilizadas para criarmos nosso código em HTML, entenda ferramentas, como programas que podemos utilizar para escrever nosso código.</p>
+    <p>Primeiro, precisamos entender que <abbr title="Hypertext Markup Language">HTML</abbr> não é uma linguagem de programação e sim uma linguaegem de marcação, como o próprio nome nos diz, Linguagem de Marcação Hipertexto.</p>
+    <p>Podemos utilizar desde um simples Bloco de Notas até programas mais completos para escrever nosso código. Esses programas podem ser o Notepad+, Sublime Text e o Visual Studio Code, este último o que vem sendo mais utilizado pela comunidade Dev e o que será utilizado nessa trilha.</p>
+
+    <h3 id="estrutura">Estrutura Básica do HTML <sup><a href="#inicio"><small>(inicio)</small></a></sup></h3>
+    <p>Um arquivo HTML é escrito através de marcações chamadas TAGS. Para um arquivo básico, utilizamos as tags:</p>
+    <ul>
+        <li><mark><strong>&lt;html&gt;&lt;&sol;html&gt;</strong></mark>: Esta tag é o elemento básico da estrutura do HTML. Assim sendo, ela conterá todos os elementos do seu documento. Todo documento HTML deve iniciar e finalizar com essa tag;</li>
+        <li><mark><strong>&lt;head&gt;&lt;&sol;head&gt;</strong></mark>: Essa tag delimita o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de transmitir ao navegador diversas informações muito úteis e essenciais a uma boa apresentação do seu documento HTML;</li>
+        <li><mark><strong>&lt;body&gt;&lt;&sol;body&gt;</strong></mark>: A tag que representa o corpo do documento. Em síntese, é nessa tag que todos os elementos visíveis do seu site devem ser inseridos.</li>
+    </ul>
+
+    <h3 id="tags">TAGS <sup><a href="#inicio"><small>(início)</small></a></sup></h3>
+    <p>Vamos listar aqui as pricipais tags para incluir conteúdo à página HTML, como títulos, parágrafos, listas e llinks:</p>
+    
+    <h4>TAGS de Título</h4>
+    <p>As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para definir títulos, utilizamos as tags:</p>
+    <p>
+        &lt;h1&gt;&lt;&sol;h1&gt; - Título de maior valor hierárquico <br>
+        &lt;h2&gt;&lt;&sol;h2&gt;<br>
+        &lt;h3&gt;&lt;&sol;h3&gt;<br>
+        &lt;h4&gt;&lt;&sol;h4&gt;<br>
+        &lt;h5&gt;&lt;&sol;h5&gt;<br>
+        &lt;h6&gt;&lt;&sol;h6&gt; - Título de menor valor hierárquico
+    </p>
+
+    <h4>TAGS de texto</h4>
+    <p>As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Vamos conhecê-las:</p>
+    <ul>
+        <li><strong>&lt;p&gt;&lt;&sol;p&gt;</strong> - Principal tag de texto, compõe um parágrafo;</li>
+        <li><strong>&lt;span&gt;&lt;&sol;span&gt;</strong> - Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container;</li>
+        <li><strong>&lt;pre&gt;&lt;&sol;pre&gt;</strong> - Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;</li>
+        <li><strong>&lt;i&gt;&lt;&sol;i&gt;</strong> - Utilizada para transformar o texto em <i>itálico</i>;</li>
+        <li><strong>&lt;u&gt;&lt;&sol;u&gt;</strong> - Deixa o conteúdo com uma linha abaixo do texto, conhecida como <u>"underline"</u>;</li>
+        <li><strong>&lt;strong&gt;&lt;&sol;strong&gt;</strong> - Deixa o conteúdo em <strong>negrito</strong>;</li>
+        <li><strong>&lt;hr&sol;&gt;</strong> - Esta tag forma uma linha horizontal.</li>
+    </ul>
+
+    <h3 id="olUl">Listas ordenadas e não ordenadas <sup><a href="#inicio"><small>(início)</small></a></sup></h3>
+    <p>Também conhecidas como as Tags de Listas. As listas podem ser ordenadas, onde a lista criada vai ser inserida em ordem numérica ou alfabética, de acordo com a necessidade do DEV, ou não ordenadas.</p>
+    <p>Para criar listas ordenadas usamos a tag <strong>&lt;ol&gt;&lt;&sol;ol&gt;</strong>.</p>
+    <p>Exemplo</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p>Para criar listas não ordenadas usamos a tag <strong>&lt;ul&gt;&lt;&sol;ul&gt;</strong>.</p>
+    <p>Exemplo</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3 id="link">Links <sup><a href="#inicio"><small>(início)</small></a></sup></h3>
+    <p>A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. <br>
+        Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! <br>
+        Portanto, é o principal fundamento que forma a web.
+    </p>
+    <p>Para realizar um link, podemos chamar as tags <strong>&lt;a&gt;&lt;&sol;a&gt;</strong> com o atributo href. <br>
+       Por exemplo, caso queiramos criar um link no nosso texto que redirecione à página inicial do google:
+    </p>
+    <p>&lt;&#112;&gt;Para acessar o Google, &lt;&#97; href = "https://www.google.com"&gt;clique aqui.&lt;&sol;&#97;&gt;&lt;&sol;&#112;&gt;</p>
+    <p>O resultado desse código será:</p>
+    <p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+</html>
