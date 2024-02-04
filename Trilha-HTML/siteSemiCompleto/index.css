@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.menu {
+  width: 15%;
+  padding: 10px 20px 0px;
+}
+
+.header {
+  min-height: 150px;
+}
+.header > img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.content {
+  min-height: 300px;
+  padding: 20px;
+}
+.content td {
+  text-align: center;
+  border: 1px solid;
+  padding: 15px;
+}
+
+.content--contato {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  min-height: 50px;
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
