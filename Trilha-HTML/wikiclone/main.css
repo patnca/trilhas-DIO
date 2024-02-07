@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { 
+    list-style: none;
+    padding-left: 5px;
+}
+
+a { 
+    color:blue;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: -10px;
+}
+
+sub {
+    font-size: 10px;
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.content ul {
+    list-style-type: circle;
+    margin-left: 50px;
+}
+
+footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+figure img {
+    border-bottom: #cdcdcd solid 1px;
+}
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.elenco {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-evenly;
+    background-color: #cdcdcd;
+    padding: 5px 0;
+    margin-bottom: 30px;
+}
+
+.elenco figure {
+    margin: 0;
+}
+
+.elenco figure img {
+    width: 150px;
+    height: 150px;
+}
+
+table {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ababab;   
+    margin: 0;
+    padding: 3px;
+}
+
+.title, .character {
+    background-color: #eaecf0;
+}
+
+.blank {
+    background-color: #d3d3d3;
+}
