@@ -1,0 +1,136 @@
+@import url(./reset.css);
+
+body {
+  background-color: rgba(204, 204, 504, 0.2);
+  display: grid;
+  grid:
+    "header header header header" 5.6rem
+    "nav main main main" calc(100vh - 5.6rem)
+    / 21.8rem 1fr 1fr 1fr;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2.4rem;
+  background-color: #ffffff;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14.6rem;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-center input {
+  height: 4rem;
+  font-size: 1.6rem;
+  width: 34.8rem;
+  outline: none;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.header-center div {
+  width: 5.7rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(248, 248, 248);
+}
+
+.header-right {
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right img {
+  width: 2.4rem;
+  border-radius: 50%;
+}
+
+nav {
+  grid-area: nav;
+  padding-left: 2.4rem;
+  background-color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li span {
+  font-size: 1.4rem;
+  margin-left: 1.6rem;
+}
+
+#inicio {
+  font-weight: 700;
+}
+
+main {
+  grid-area: main;
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.content-item {
+  width: 28.2rem;
+  height: 26.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.content-item .content-item__details {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  width: 24.9rem;
+}
+
+.content-item .content-item__details img {
+  border-radius: 50%;
+}
+
+.content-item .content-item__details .content-detail {
+  margin-left: 1rem;
+}
+
+.content-item .content-item__details .content-detail h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content-item .content-item__details span {
+  font-size: 1.2rem;
+  color: rgb(81, 81, 81);
+  display: inline-block;
+}
