@@ -1,0 +1,59 @@
+@import url(./reset.css);
+
+header {
+    padding: 7rem 0;
+    height: 50.5rem;
+    color: #ffffff;
+    background-image: url(../images/headerBackground.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.4rem;
+    max-width: 75.7rem;
+    margin: auto;
+}
+
+.header-container h1 {
+    font-size: 3.2rem;
+    font-family: "Luckiest guy", sans-serif;
+    font-weight: 400;
+    width: 27.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    align-self: flex-start;
+    letter-spacing: .1rem;
+}
+
+.header-container p {
+    font-size: 1.6rem;
+    min-width: 38.1rem;
+    max-width: 100%;
+    font-weight: 400;
+}
+
+.buttons {
+    margin-top: 2.4rem;
+    width: 38.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.buttons button {
+    height: 5.4rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #ffffff;
+}
+
+#openDiscord {
+    background-color: rgb(35, 39, 42);
+    color: #ffffff;
+}
